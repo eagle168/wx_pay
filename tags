@@ -15,17 +15,24 @@ WxPay	lib/wx_pay/sign.rb	/^module WxPay$/;"	m
 WxPay	lib/wx_pay/version.rb	/^module WxPay$/;"	m
 WxPay	test/wx_pay/result_test.rb	/^class WxPay::ResultTest < MiniTest::Test$/;"	c
 WxPay	test/wx_pay/sign_test.rb	/^class WxPay::SignTest < MiniTest::Test$/;"	c
-apiclient_cert	lib/wx_pay.rb	/^    def apiclient_cert$/;"	f	class:WxPay
-check_required_options	lib/wx_pay/service.rb	/^    def self.check_required_options(options, names)$/;"	F	class:WxPay.Service
-extra_rest_client_options	lib/wx_pay.rb	/^    def extra_rest_client_options$/;"	f	class:WxPay
-extra_rest_client_options=	lib/wx_pay.rb	/^    def extra_rest_client_options=(options)$/;"	f	class:WxPay
+apiclient_cert=	lib/wx_pay.rb	/^    def apiclient_cert=(cert)$/;"	f	class:WxPay
+apiclient_key=	lib/wx_pay.rb	/^    def apiclient_key=(key)$/;"	f	class:WxPay
+check_required_options	lib/wx_pay/service.rb	/^      def check_required_options(options, names)$/;"	f	class:WxPay.Service
+close_order	lib/wx_pay/service.rb	/^    def self.close_order(params)$/;"	F	class:WxPay.Service
 generate	lib/wx_pay/sign.rb	/^    def self.generate(params)$/;"	F	class:WxPay.Sign
-generate_app_pay_req	lib/wx_pay/service.rb	/^    def self.generate_app_pay_req(params)$/;"	F	class:WxPay.Service
+generate_app_pay_req	lib/wx_pay/service.rb	/^    def self.generate_app_pay_req(params, options = {})$/;"	F	class:WxPay.Service
 initialize	lib/wx_pay/result.rb	/^    def initialize(result)$/;"	f	class:WxPay.Result
-invoke_refund	lib/wx_pay/service.rb	/^    def self.invoke_refund(params)$/;"	F	class:WxPay.Service
-invoke_remote	lib/wx_pay/service.rb	/^    def self.invoke_remote(url, payload)$/;"	F	class:WxPay.Service
-invoke_unifiedorder	lib/wx_pay/service.rb	/^    def self.invoke_unifiedorder(params)$/;"	F	class:WxPay.Service
-make_payload	lib/wx_pay/service.rb	/^    def self.make_payload(params)$/;"	F	class:WxPay.Service
+invoke_micropay	lib/wx_pay/service.rb	/^    def self.invoke_micropay(params, options = {})$/;"	F	class:WxPay.Service
+invoke_refund	lib/wx_pay/service.rb	/^    def self.invoke_refund(params, options = {})$/;"	F	class:WxPay.Service
+invoke_remote	lib/wx_pay/service.rb	/^      def invoke_remote(url, payload, options = {})$/;"	f	class:WxPay.Service
+invoke_reverse	lib/wx_pay/service.rb	/^    def self.invoke_reverse(params, options = {})$/;"	F	class:WxPay.Service
+invoke_transfer	lib/wx_pay/service.rb	/^    def self.invoke_transfer(params, options = {})$/;"	F	class:WxPay.Service
+invoke_unifiedorder	lib/wx_pay/service.rb	/^    def self.invoke_unifiedorder(params, options = {})$/;"	F	class:WxPay.Service
+make_payload	lib/wx_pay/service.rb	/^      def make_payload(params)$/;"	f	class:WxPay.Service
+order_query	lib/wx_pay/service.rb	/^    def self.order_query(params, options = {})$/;"	F	class:WxPay.Service
+sendgroupredpack	lib/wx_pay/service.rb	/^    def self.sendgroupredpack(params, options={})$/;"	F	class:WxPay.Service
+sendredpack	lib/wx_pay/service.rb	/^    def self.sendredpack(params, options={})$/;"	F	class:WxPay.Service
+set_apiclient_by_pkcs12	lib/wx_pay.rb	/^    def set_apiclient_by_pkcs12(str, pass)$/;"	f	class:WxPay
 setup	test/wx_pay/service_test.rb	/^  def setup$/;"	f	class:ServiceTest
 setup	test/wx_pay/sign_test.rb	/^  def setup$/;"	f	class:WxPay
 success?	lib/wx_pay/result.rb	/^    def success?$/;"	f	class:WxPay.Result
